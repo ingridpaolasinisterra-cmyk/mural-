@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mural Vivo — Declaración de Alma Ata</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap');
+
+  :root{
+    --paper:#F4EEDD;
+    --ink:#20362F;
+    --ochre:#C4862A;
+    --clay:#A8492F;
+    --pine:#3C5E4C;
+    --cream-line: rgba(32,54,47,0.15);
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+
+  html{ scroll-behavior:smooth; }
+
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Work Sans', sans-serif;
+    overflow-x:hidden;
+  }
+
+  section{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding: 8vh 10vw;
+    position:relative;
+  }
+
+  .eyebrow{
+    font-family:'Work Sans', sans-serif;
+    font-size:0.95rem;
+    font-weight:500;
+    color:var(--clay);
+    margin-bottom:1.2rem;
+  }
+
+  h1,h2{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    line-height:1.05;
+    color:var(--ink);
+  }
+
+  h1{ font-size:clamp(2.6rem, 6vw, 5rem); max-width:14ch; }
+  h2{ font-size:clamp(1.9rem, 4vw, 3rem); max-width:16ch; margin-bottom:1.4rem; }
+
+  p{
+    font-size:1.15rem;
+    line-height:1.6;
+    max-width:52ch;
+    color:var(--ink);
+  }
+
+  .lede{
+    font-size:1.35rem;
+    max-width:44ch;
+    margin-top:1.4rem;
+    color:var(--pine);
+    font-weight:500;
+  }
+
+  .divider{
+    width:100%;
+    height:60px;
+    margin-top:6vh;
+  }
+
+  .panel-a{ background:var(--paper); }
+  .panel-b{ background:#EBE1C4; }
+  .panel-c{ background:var(--paper); }
+  .panel-d{ background:#E4DCC8; }
+
+  .tag{
+    display:inline-block;
+    border:1.5px solid var(--ink);
+    border-radius:100px;
+    padding:0.35rem 1rem;
+    font-size:0.9rem;
+    margin-bottom:2rem;
+    width:fit-content;
+  }
+
+  .principles{
+    list-style:none;
+    margin-top:1.5rem;
+    display:flex;
+    flex-direction:column;
+    gap:1.1rem;
+    max-width:38rem;
+  }
+  .principles li{
+    display:flex;
+    gap:1.2rem;
+    align-items:baseline;
+    border-bottom:1px solid var(--cream-line);
+    padding-bottom:1.1rem;
+    font-size:1.15rem;
+  }
+  .principles li b{
+    font-family:'Fraunces', serif;
+    font-size:1.3rem;
+    color:var(--clay);
+    min-width:2ch;
+  }
+
+  .qa{
+    background:var(--ink);
+    color:var(--paper);
+  }
+  .qa h2{ color:var(--paper); }
+  .qa .q{
+    font-family:'Fraunces', serif;
+    font-size:1.4rem;
+    font-style:italic;
+    color:#E9C88A;
+    margin-top:2.2rem;
+    margin-bottom:0.5rem;
+  }
+  .qa p{ color:#EDE7D6; }
+
+  .closing{
+    background:var(--clay);
+    color:var(--paper);
+    align-items:center;
+    text-align:center;
+  }
+  .closing h1{ color:var(--paper); max-width:20ch; margin:0 auto; }
+  .closing p{ margin:1.4rem auto 0; }
+
+  .fade-in{
+    opacity:0;
+    transform:translateY(18px);
+    transition:opacity 0.9s ease, transform 0.9s ease;
+  }
+  .fade-in.visible{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+  .wave{ display:block; width:100%; }
+</style>
+</head>
+<body>
+
+<section class="panel-a">
+  <div class="fade-in">
+    <div class="eyebrow">EQUIPO 1 · SALUD PÚBLICA</div>
+    <h1>Alma Ata,<br>1978</h1>
+    <p class="lede">En una ciudad de Kazajistán, delegados de 134 países firmaron una promesa que aún no se ha cumplido: salud para todos.</p>
+  </div>
+  <svg class="divider" viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path class="wave" d="M0,30 C300,60 900,0 1200,30 L1200,60 L0,60 Z" fill="#EBE1C4"/>
+  </svg>
+</section>
+
+<section class="panel-b">
+  <div class="fade-in">
+    <div class="tag">Contexto histórico</div>
+    <h2>Un mundo con salud repartida de forma desigual</h2>
+    <p>A mediados del siglo XX, la salud dependía casi por completo de hospitales y especialistas concentrados en las ciudades, mientras las comunidades rurales y empobrecidas quedaban fuera del sistema. La Conferencia Internacional sobre Atención Primaria de Salud, convocada por la OMS y UNICEF en septiembre de 1978, respondió a esa brecha con una idea simple pero radical: la salud no es un privilegio, es un derecho, y se construye desde la comunidad, no solo desde el hospital.</p>
+  </div>
+  <svg class="divider" viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path class="wave" d="M0,30 C300,0 900,60 1200,30 L1200,60 L0,60 Z" fill="#F4EEDD"/>
+  </svg>
+</section>
+
+<section class="panel-c">
+  <div class="fade-in">
+    <div class="tag">Principios centrales</div>
+    <h2>Lo que estableció la Declaración</h2>
+    <ul class="principles">
+      <li><b>01</b> La salud es un derecho humano fundamental, no una mercancía.</li>
+      <li><b>02</b> La equidad debe guiar la distribución de los recursos sanitarios.</li>
+      <li><b>03</b> La participación comunitaria es motor, no destinatario, de la salud pública.</li>
+      <li><b>04</b> La salud exige acción intersectorial: educación, vivienda, agua, trabajo.</li>
+      <li><b>05</b> La Atención Primaria en Salud (APS) es la puerta de entrada al sistema.</li>
+    </ul>
+  </div>
+  <svg class="divider" viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path class="wave" d="M0,30 C300,60 900,0 1200,30 L1200,60 L0,60 Z" fill="#E4DCC8"/>
+  </svg>
+</section>
+
+<section class="panel-d qa">
+  <div class="fade-in">
+    <div class="tag" style="border-color:var(--paper);">Preguntas clave</div>
+    <h2>¿Por qué sigue importando hoy?</h2>
+
+    <div class="q">¿Por qué fue revolucionaria la Declaración de Alma Ata?</div>
+    <p>Porque desplazó el centro del sistema de salud: del hospital especializado a la comunidad. Por primera vez, un acuerdo internacional reconoció que sin abordar la pobreza, la vivienda y la educación, no hay salud posible.</p>
+
+    <div class="q">¿Cómo se evidencia su vigencia hoy en Colombia?</div>
+    <p>La Política de Atención Integral en Salud (PAIS) retoma explícitamente el enfoque de Alma Ata, pero la brecha rural persiste: municipios apartados siguen dependiendo de brigadas esporádicas en lugar de una APS sostenida y territorial.</p>
+
+    <div class="q">¿Qué rol cumple la enfermería para lograr "Salud para todos"?</div>
+    <p>La enfermería es, en la práctica, quien sostiene la APS en el territorio: promueve, previene, educa y acompaña a la comunidad de forma continua, siendo frecuentemente el primer y único contacto sanitario en las zonas rurales.</p>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="fade-in">
+    <h1>El reto: llevar la APS al territorio rural</h1>
+    <p>Diseñar una estrategia visual y sonora para promover la Atención Primaria en Salud en comunidades rurales — la promesa de Alma Ata, cuarenta y siete años después.</p>
+  </div>
+</section>
+
+<script>
+  const els = document.querySelectorAll('.fade-in');
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting) e.target.classList.add('visible');
+    });
+  }, { threshold:0.25 });
+  els.forEach(el=>obs.observe(el));
+</script>
+
+</body>
+</html>
